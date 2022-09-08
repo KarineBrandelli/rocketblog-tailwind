@@ -32,32 +32,23 @@
     rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
   </head>
 
-
-
-
-
-
-
-
   <body
-  class="w-screen"
-  style="font-family: Poppins;"> 
+  style="font-family: Poppins;" > 
 
     <div
-    class="min-h-fit bg-purple border-b-4 border-lightgreen
+    class="bg-purple border-b-4 border-lightgreen
     flex justify-center px-4 sm:px-10" >
-      <div class="max-w-7xl">
-              
-        <header class="mt-16 lg:mt-24">
+      <div class="max-w-7xl">              
+        <header class="w-full mt-16 lg:mt-24">
           <nav
-          class="flex justify-between items-center border-2 border-orange-500">
-            <div class="logo">
+          class="flex justify-between items-center">
+            <div>
               <a href="#">
                 <img src="./assets/logo.svg">
               </a>
             </div>
      
-            <div class="text-white font-bold text-lg space-x-5 hidden md:flex">
+            <div class="text-white font-bold text-xl space-x-7 hidden md:flex">
               <a href="#"
               class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
               Home
@@ -75,17 +66,18 @@
             <div class="flex space-x-2">
               <input
               type="search"
-              class="bg-darkpurple px-4 py-3 rounded-xl text-white text-base
+              class="hidden lg:flex
+              bg-darkpurple text-white text-base px-4 py-3 rounded-xl
               focus:border-lightpurple focus:ring-2 focus:ring-lightpurple
-              focus:outline-none transition duration-300 ease-in-out
-              hidden lg:flex"
+              focus:outline-none transition duration-300 ease-in-out"
               placeholder="Buscar">
                 <a
                 href="#"
                 class="flex items-center">
                   <img
                   src="./assets/search.svg"
-                  class="bg-lightpurple px-4 py-3 rounded-xl hidden md:flex ">
+                  class="hidden md:flex
+                  bg-lightpurple px-4 py-3 rounded-xl">
                 </a>
             </div>
 
@@ -97,22 +89,31 @@
               </button>
             </div>         
           </nav>
-        </header>
-
-        
+        </header>        
   
-        <div class="w-full mt-16 mb-10 flex justify-between gap-8 border-2 border-gray-200 flex-col lg:flex-row">
-          <div class="lg:w-5/12 lg:text-left lg:px-0 w-full text-center">
-              <h1 class="text-lightpurple font-bold text-3xl md:text-4xl px-2 md:px-14 lg:px-0">
-                Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
-              </h1>
-              <p class="text-white text-base md:text-lg text-justify mt-5 px-2 md:px-14 lg:px-0">
-                Nesse cenário, um desenvolvedor iniciante precisa de toda a ajuda que puder ter, como dicas e conselhos para começar sua carreira a caminho do sucesso.
-              </p>
+        <div
+        class="w-full flex flex-col justify-between gap-8 mt-16 mb-10
+        lg:flex-row">
+          <div
+          class="w-full text-center
+          lg:w-5/12 lg:text-left lg:px-0">
+            <h1
+            class="text-lightpurple font-bold text-3xl px-2
+            md:text-4xl md:px-14 lg:px-0">
+              Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
+            </h1>
+            <p
+            class="text-white text-base text-justify
+            px-2 md:text-lg mt-5 md:px-14 lg:px-0">
+              Nesse cenário, um desenvolvedor iniciante precisa de toda a ajuda que puder ter, como dicas e conselhos para começar sua carreira a caminho do sucesso.
+            </p>
 
               <a
               href="#"
-              class="flex items-center text-lightpurple font-bold text-base md:text-xl px-2 md:px-14 lg:px-0 mt-4 hover:text-white">
+              class="flex items-center
+              text-lightpurple font-bold text-base
+              px-2 md:text-xl md:px-14 lg:px-0 mt-4
+              hover:text-white">
                 Veja mais
                 <img
                 src="./assets/arrow-right.svg"
@@ -120,31 +121,20 @@
               </a>
           </div>
 
-          <div class="max-w-fit my-auto px-2 md:px-0 mx-auto lg:mx-0">
+          <div
+          class="max-w-fit my-auto px-2
+          md:px-0 mx-auto lg:mx-0">
             <img src="./assets/featured-image.png" class="">
           </div>    
         </div>
-
       </div>     
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- MAIN CONTENT-->
-
-    <div class="min-h-fit flex justify-center mt-10 px-4 sm:px-10">
-      <div class="max-w-7xl border-2 border-green-300">
+    <div
+    class="flex justify-center mt-10 px-4 sm:px-10">
+      <div class="max-w-7xl">
           
-        <article
+      <article
         class="w-full flex flex-col justify-between
         mb-16 lg:flex-row lg:px-0 lg:space-x-10">
           <div class="flex flex-col lg:w-1/2">
@@ -200,78 +190,72 @@
               </p>
             </div>
           </div>
-        </article>
+      </article>
 
-        <section class="flex flex-col lg:flex-row lg:space-x-9">
-            <div class="flex flex-col
-            w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0
-            border-2 border-orange-500">              
-              <img src="./assets/post-2.png" alt="post-2"
-              class="max-w-ful">                  
-              <div class="sectiontext">
-                <h5 class="text-gray-500 text-sm mt-2">
-                  Março 07, 2022
-                </h5>
-                <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-                  <a href="#"
-                  class="hover:text-lightpurple">
-                    10 dicas para conseguir a vaga desejada
-                  </a>
-                </h3>
-                <p class="text-justify text-base xl:text-lg hidden md:block">
-                  O currículo é o seu passaporte para as entrevistas de emprego. É com ele que você conquista, ou afasta, a atenção dos recrutadores - que o desclassificam ao observar erros ou identificar que o candidato não é compatível com a posição.
-                </p>
+      <section class="flex flex-col lg:flex-row lg:space-x-9">
+        <div class="flex flex-col
+        w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
+          <img src="./assets/post-2.png" alt="post-2"
+          class="max-w-ful">                  
+          <div class="sectiontext">
+            <h5 class="text-gray-500 text-sm mt-2">
+              Março 07, 2022
+            </h5>
+            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+              <a href="#"
+              class="hover:text-lightpurple">
+                10 dicas para conseguir a vaga desejada
+              </a>
+            </h3>
+            <p class="text-justify text-base xl:text-lg hidden md:block">
+              O currículo é o seu passaporte para as entrevistas de emprego. É com ele que você conquista, ou afasta, a atenção dos recrutadores - que o desclassificam ao observar erros ou identificar que o candidato não é compatível com a posição.
+            </p>
+          </div>
+        </div>
 
-              </div>
-            </div>
+        <div class="flex flex-col
+        w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
+            <img
+            src="./assets/post-3.png"
+            alt="post-3"
+            class="max-w-full">                      
+          <div class="sectiontext">
+            <h5 class="text-gray-500 text-sm mt-2">
+                Abril 15, 2022
+            </h5>
+            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+              <a href="#"
+              class="hover:text-lightpurple">
+                Deixe seu código mais semântico com essas dicas
+              </a>
+            </h3>
+            <p class="text-justify text-base xl:text-lg hidden md:block">
+                Um código semântico torna a navegação mais acessível, incluindo portadores de necessidades especiais, uma vez que os meios de acesso entendem o conteúdo e podem passar para o usuário com facilidade.
+            </p>
+          </div>
+        </div>
 
-            <div class="flex flex-col
-            w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0
-            border-2 border-orange-500">              
-                <img src="./assets/post-3.png" alt="post-3"
-                class="max-w-full">                      
-              <div class="sectiontext">
-                  <h5 class="text-gray-500 text-sm mt-2">
-                    Abril 15, 2022
-                  </h5>
-                  <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-                    <a href="#"
-                    class="hover:text-lightpurple">
-                      Deixe seu código mais semântico com essas dicas
-                    </a>
-                  </h3>
-                  <p class="text-justify text-base xl:text-lg hidden md:block">
-                    Um código semântico torna a navegação mais acessível, incluindo portadores de necessidades especiais, uma vez que os meios de acesso entendem o conteúdo e podem passar para o usuário com facilidade.
-                  </p>
-
-              </div>
-            </div>
-
-            <div class="flex flex-col
-              w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0
-              border-2 border-black">              
-                <img src="./assets/post-4.png" alt="post-4"
-                class="max-w-full">             
-              <div class="sectiontext">
-                  <h5 class="text-gray-500 text-sm mt-2">
-                    Maio 25, 2022
-                  </h5>
-                  <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-                    <a href="#"
-                    class="hover:text-lightpurple">
-                      Use essas dicas nas suas aplicações mobile
-                    </a>
-                  </h3>
-                  <p class="text-justify text-base xl:text-lg hidden md:block">
-                    Uma boa regra para o desenvolvimento profissional é que o conteúdo deve caber na tela. Se você está desenvolvendo para iOS ou Android, o conteúdo deve caber na tela. Não force os usuários a rolar para a esquerda ou para a direita.
-                  </p>
-
-              </div>
-            </div>
-        </section>
-          
+        <div class="flex flex-col
+          w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
+            <img src="./assets/post-4.png" alt="post-4"
+            class="max-w-full">             
+          <div class="sectiontext">
+            <h5 class="text-gray-500 text-sm mt-2">
+              Maio 25, 2022
+            </h5>
+            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+              <a href="#"
+              class="hover:text-lightpurple">
+                Use essas dicas nas suas aplicações mobile
+              </a>
+            </h3>
+            <p class="text-justify text-base xl:text-lg hidden md:block">
+              Uma boa regra para o desenvolvimento profissional é que o conteúdo deve caber na tela. Se você está desenvolvendo para iOS ou Android, o conteúdo deve caber na tela. Não force os usuários a rolar para a esquerda ou para a direita.
+            </p>
+          </div>
+        </div>
+      </section>
       </div>
     </div> 
-
   </body>
 </html>
