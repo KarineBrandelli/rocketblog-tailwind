@@ -35,10 +35,10 @@
   <body class="w-screen" style="font-family: Poppins;"> 
 
     <div
-    class="min-h-fit bg-purple border-b-4 border-lightgreen flex justify-center" >
+    class="min-h-fit bg-purple border-b-4 border-lightgreen flex justify-center sm:px-8 xl:px-0" >
       <div class="max-w-7xl">
               
-        <header class="mt-24 ">  
+        <header class="mt-24 ">
           <nav
           class="flex justify-between items-center border-2 border-orange-500">
             <div class="logo">
@@ -47,26 +47,22 @@
               </a>
             </div>
      
-            <div class="text-white font-bold text-lg space-x-5">
+            <div class="text-white font-bold text-lg space-x-5 sm:hidden md:flex">
               <a href="#"
               class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              HOME
+              Home
               </a>
               <a href="#"
               class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              SOBRE
+              Sobre
               </a>
               <a href="#"
               class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              CATEGORIAS
-              </a>
-              <a href="#"
-              class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              CONTATO
+              Categorias
               </a>
             </div>
     
-            <div class="flex space-x-2">
+            <div class="flex sm:hidden lg:flex space-x-2">
               <input
               type="search"
               class="bg-darkpurple px-4 py-3 rounded-xl text-white text-base
@@ -84,17 +80,19 @@
 
             <div class="flex lg:hidden">
               <button class="menu-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10 px-2 py-2  bg-lightpurple rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-12 px-2 py-2  bg-lightpurple rounded-xl">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>                  
               </button>
             </div>         
           </nav>
         </header>
+
+        
   
-        <div class="w-full mt-16 mb-10 flex justify-between border-2 border-gray-200">
-          <div class="w-5/12">
-              <h1 class="text-lightpurple font-bold text-5xl"
+        <div class="w-full mt-16 mb-10 flex justify-between gap-8 border-2 border-gray-200 sm:flex-col lg:flex-row">
+          <div class="lg:w-5/12 lg:text-left lg:px-0 sm:w-full sm:text-center sm:px-14">
+              <h1 class="text-lightpurple font-bold text-4xl"
               style="line-height: 3.75rem;">
                 Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
               </h1>
@@ -112,15 +110,17 @@
               </a>
           </div>
 
-          <div class="max-w-fit flex justify-center">
+          <div class="max-w-fit my-auto sm:mx-auto lg:mx-0">
             <img src="./assets/featured-image.png" class="">
           </div>    
         </div>
 
       </div>     
     </div>
+
     <!-- MAIN CONTENT-->
-    <div class="min-h-fit flex justify-center mt-10">
+
+    <div class="min-h-fit flex justify-center mt-10 lg:px-8">
       <div class="max-w-7xl border-2 border-green-300">
           
         <article class="w-full flex justify-between mb-16 space-x-16">
