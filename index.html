@@ -1,160 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket Blog</title>
 
-    <script
-    src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              darkpurple: '#170027',
-              purple: '#290742',
-              lightpurple: '#9e6dc2',
-              lightgreen: '#4fff4b',
-            }
-          }
-        }
-      }
+              darkpurple: "#170027",
+              purple: "#290742",
+              lightpurple: "#9e6dc2",
+              lightgreen: "#4fff4b",
+            },
+          },
+        },
+      };
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-    rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
   </head>
 
-  <body
-  style="font-family: Poppins;" > 
-
+  <body style="font-family: Poppins">
     <div
-    class="bg-purple border-b-4 border-lightgreen
-    flex justify-center px-4 sm:px-10" >
-      <div class="max-w-7xl">              
+      class="bg-purple border-b-4 border-lightgreen flex justify-center px-4 sm:px-10" >
+      <div class="max-w-7xl">
         <header class="w-full mt-16 lg:mt-24">
-          <nav
-          class="flex justify-between items-center">
+          <nav class="flex justify-between items-center">
             <div>
               <a href="#">
-                <img src="./assets/logo.svg">
+                <img src="./assets/logo.svg" />
               </a>
             </div>
-     
+
             <div class="text-white font-bold text-xl space-x-7 hidden md:flex">
-              <a href="#"
-              class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              Home
+              <a
+                href="#"
+                class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out" >
+                Home
               </a>
-              <a href="#"
-              class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              Sobre
+              <a
+                href="#"
+                class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out" >
+                Sobre
               </a>
-              <a href="#"
-              class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out">
-              Categorias
+              <a
+                href="#"
+                class="hover:text-lightpurple hover:border-b-2 border-lightgreen pb-1 transition duration-7000 ease-in-out" >
+                Categorias
               </a>
             </div>
-    
+
             <div class="flex space-x-2">
               <input
-              type="search"
-              class="hidden lg:flex
-              bg-darkpurple text-white text-base px-4 py-3 rounded-xl
-              focus:border-lightpurple focus:ring-2 focus:ring-lightpurple
-              focus:outline-none transition duration-300 ease-in-out"
-              placeholder="Buscar">
-                <a
-                href="#"
-                class="flex items-center">
-                  <img
+                type="search"
+                class="hidden lg:flex bg-darkpurple text-white text-base px-4 py-3 rounded-xl focus:border-lightpurple focus:ring-2 focus:ring-lightpurple focus:outline-none transition duration-300 ease-in-out"
+                placeholder="Buscar" />
+              <a href="#" class="flex items-center">
+                <img
                   src="./assets/search.svg"
-                  class="hidden md:flex
-                  bg-lightpurple px-4 py-3 rounded-xl">
-                </a>
+                  class="hidden md:flex bg-lightpurple px-4 py-3 rounded-xl" />
+              </a>
             </div>
 
             <div class="flex md:hidden">
               <button class="menu-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-14 h-12 px-2 py-2  bg-lightpurple rounded-xl">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>                  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-14 h-12 px-2 py-2 bg-lightpurple rounded-xl" >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
               </button>
-            </div>         
+            </div>
           </nav>
-        </header>        
-  
+        </header>
+
         <div
-        class="w-full flex flex-col justify-between gap-8 mt-16 mb-10
-        lg:flex-row">
-          <div
-          class="w-full text-center
-          lg:w-5/12 lg:text-left lg:px-0">
+          class="w-full flex flex-col justify-between gap-8 mt-16 mb-10 lg:flex-row" >
+          <div class="w-full text-center lg:w-5/12 lg:text-left lg:px-0">
             <h1
-            class="text-lightpurple font-bold text-3xl px-2
-            md:text-4xl md:px-14 lg:px-0">
-              Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
+              class="text-lightpurple font-bold text-3xl px-2 md:text-4xl md:px-14 lg:px-0" >
+              Veja o guia definitivo para conquistar seus objetivos como DEV em
+              2022
             </h1>
             <p
-            class="text-white text-base text-justify
-            px-2 md:text-lg mt-5 md:px-14 lg:px-0">
-              Nesse cenário, um desenvolvedor iniciante precisa de toda a ajuda que puder ter, como dicas e conselhos para começar sua carreira a caminho do sucesso.
+              class="text-white text-base text-justify px-2 md:text-lg mt-5 md:px-14 lg:px-0" >
+              Nesse cenário, um desenvolvedor iniciante precisa de toda a ajuda
+              que puder ter, como dicas e conselhos para começar sua carreira a
+              caminho do sucesso.
             </p>
 
-              <a
+            <a
               href="#"
-              class="flex items-center
-              text-lightpurple font-bold text-base
-              px-2 md:text-xl md:px-14 lg:px-0 mt-4
-              hover:text-white">
-                Veja mais
-                <img
-                src="./assets/arrow-right.svg"
-                class="pl-2">
-              </a>
+              class="flex items-center text-lightpurple font-bold text-base px-2 md:text-xl md:px-14 lg:px-0 mt-4 hover:text-white" >
+              Veja mais
+              <img src="./assets/arrow-right.svg" class="pl-2" />
+            </a>
           </div>
 
-          <div
-          class="max-w-fit my-auto px-2
-          md:px-0 mx-auto lg:mx-0">
-            <img src="./assets/featured-image.png" class="">
-          </div>    
+          <div class="max-w-fit my-auto px-2 md:px-0 mx-auto lg:mx-0">
+            <img src="./assets/featured-image.png" class="" />
+          </div>
         </div>
-      </div>     
+      </div>
     </div>
 
-    <div
-    class="flex justify-center mt-10 px-4 sm:px-10">
+    <div class="flex justify-center mt-10 px-4 sm:px-10">
       <div class="max-w-7xl">
-          
-      <article
-        class="w-full flex flex-col justify-between
-        mb-16 lg:flex-row lg:px-0 lg:space-x-10">
+        <article
+          class="w-full flex flex-col justify-between mb-16 lg:flex-row lg:px-0 lg:space-x-10" >
           <div class="flex flex-col lg:w-1/2">
             <img
-            src="./assets/post-1.png"
-            alt="post-1"
-            class="w-full px-4 md:px-0 md:w-5/6 md:mx-auto lg:w-full">
+              src="./assets/post-1.png"
+              alt="post-1"
+              class="w-full px-4 md:px-0 md:w-5/6 md:mx-auto lg:w-full" />
 
             <div class="px-4 md:px-16 lg:px-0 mt-2">
               <h5 class="text-gray-500 text-xs md:text-sm mt-2">
                 Fevereiro 12, 2022
               </h5>
-              <h3 class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold mt-3 mb-5">
-                <a href="#"
-                class="hover:text-lightpurple">
+              <h3
+                class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold mt-3 mb-5" >
+                <a href="#" class="hover:text-lightpurple">
                   Começando no ReacJS em 2022
                 </a>
               </h3>
               <p class="text-justify text-lg">
-                Se você está iniciando com React e ainda tem dúvidas, não entendeu muito bem como ele funciona ou talvez esteja se perguntando o que estudar primeiro, neste artigo quero te ajudar respondendo estas dúvidas e descomplicar alguns conceitos de React para iniciantes. Este conteúdo será apresentado com exemplos praticos, é recomendável que você tenha conhecimentos de JavaScript, HTML e CSS.
+                Se você está iniciando com React e ainda tem dúvidas, não
+                entendeu muito bem como ele funciona ou talvez esteja se
+                perguntando o que estudar primeiro, neste artigo quero te ajudar
+                respondendo estas dúvidas e descomplicar alguns conceitos de
+                React para iniciantes. Este conteúdo será apresentado com
+                exemplos praticos, é recomendável que você tenha conhecimentos
+                de JavaScript, HTML e CSS.
               </p>
             </div>
           </div>
@@ -164,14 +158,19 @@
               <h5 class="text-gray-500 text-xs md:text-sm">
                 Fevereiro 19, 2022
               </h5>
-              <h2 class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold my-3">
-                <a href="#"
-                class="hover:text-lightpurple">
-                  Conheça as principais técnicas para conseguir uma vaga internacional em programação
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold my-3" >
+                <a href="#" class="hover:text-lightpurple">
+                  Conheça as principais técnicas para conseguir uma vaga
+                  internacional em programação
                 </a>
               </h2>
               <p class="text-justify text-lg">
-                Hoje em dia muitas empresas estrangeiras estão buscando mão de obra especializada em outros países para trabalhar de forma remota. Normalmente são contratos de tempo determinado e que pagam em moeda estrangeira. Ganhar em Euros ou em Dólar enquanto se mora no Brasil não é lá uma má ideia, né?
+                Hoje em dia muitas empresas estrangeiras estão buscando mão de
+                obra especializada em outros países para trabalhar de forma
+                remota. Normalmente são contratos de tempo determinado e que
+                pagam em moeda estrangeira. Ganhar em Euros ou em Dólar enquanto
+                se mora no Brasil não é lá uma má ideia, né?
               </p>
             </div>
 
@@ -179,83 +178,82 @@
               <h5 class="text-gray-500 text-xs md:text-sm mt-7">
                 Fevereiro 27, 2022
               </h5>
-              <h2 class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold my-3">
-                <a href="#"
-                class="hover:text-lightpurple">
+              <h2
+                class="text-xl sm:text-2xl lg:text-3xl text-purple font-bold my-3" >
+                <a href="#" class="hover:text-lightpurple">
                   Por onde devo começar a estudar programação?
                 </a>
               </h2>
               <p class="text-justify text-lg">
-                Para começar na área de Tecnologia da Informação, principalmente em desenvolvimento web ou desktop, é necessário aprender Lógica de Programação e Lógica Orientada Objetos. Esses dois pontos são a base para quem quer ser programador, não importando qual caminho você queira seguir depois.
+                Para começar na área de Tecnologia da Informação, principalmente
+                em desenvolvimento web ou desktop, é necessário aprender Lógica
+                de Programação e Lógica Orientada Objetos. Esses dois pontos são
+                a base para quem quer ser programador, não importando qual
+                caminho você queira seguir depois.
               </p>
             </div>
           </div>
-      </article>
+        </article>
 
-      <section class="flex flex-col lg:flex-row lg:space-x-9">
-        <div class="flex flex-col
-        w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
-          <img src="./assets/post-2.png" alt="post-2"
-          class="max-w-ful">                  
-          <div class="sectiontext">
-            <h5 class="text-gray-500 text-sm mt-2">
-              Março 07, 2022
-            </h5>
-            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-              <a href="#"
-              class="hover:text-lightpurple">
-                10 dicas para conseguir a vaga desejada
-              </a>
-            </h3>
-            <p class="text-justify text-base xl:text-lg hidden md:block">
-              O currículo é o seu passaporte para as entrevistas de emprego. É com ele que você conquista, ou afasta, a atenção dos recrutadores - que o desclassificam ao observar erros ou identificar que o candidato não é compatível com a posição.
-            </p>
+        <section class="flex flex-col lg:flex-row lg:space-x-9">
+          <div
+            class="flex flex-col w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0" >
+            <img src="./assets/post-2.png" alt="post-2" class="max-w-ful" />
+            <div class="sectiontext">
+              <h5 class="text-gray-500 text-sm mt-2">Março 07, 2022</h5>
+              <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+                <a href="#" class="hover:text-lightpurple">
+                  10 dicas para conseguir a vaga desejada
+                </a>
+              </h3>
+              <p class="text-justify text-base xl:text-lg hidden md:block">
+                O currículo é o seu passaporte para as entrevistas de emprego. É
+                com ele que você conquista, ou afasta, a atenção dos
+                recrutadores - que o desclassificam ao observar erros ou
+                identificar que o candidato não é compatível com a posição.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-col
-        w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
-            <img
-            src="./assets/post-3.png"
-            alt="post-3"
-            class="max-w-full">                      
-          <div class="sectiontext">
-            <h5 class="text-gray-500 text-sm mt-2">
-                Abril 15, 2022
-            </h5>
-            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-              <a href="#"
-              class="hover:text-lightpurple">
-                Deixe seu código mais semântico com essas dicas
-              </a>
-            </h3>
-            <p class="text-justify text-base xl:text-lg hidden md:block">
-                Um código semântico torna a navegação mais acessível, incluindo portadores de necessidades especiais, uma vez que os meios de acesso entendem o conteúdo e podem passar para o usuário com facilidade.
-            </p>
+          <div
+            class="flex flex-col w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0" >
+            <img src="./assets/post-3.png" alt="post-3" class="max-w-full" />
+            <div class="sectiontext">
+              <h5 class="text-gray-500 text-sm mt-2">Abril 15, 2022</h5>
+              <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+                <a href="#" class="hover:text-lightpurple">
+                  Deixe seu código mais semântico com essas dicas
+                </a>
+              </h3>
+              <p class="text-justify text-base xl:text-lg hidden md:block">
+                Um código semântico torna a navegação mais acessível, incluindo
+                portadores de necessidades especiais, uma vez que os meios de
+                acesso entendem o conteúdo e podem passar para o usuário com
+                facilidade.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex flex-col
-          w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0">              
-            <img src="./assets/post-4.png" alt="post-4"
-            class="max-w-full">             
-          <div class="sectiontext">
-            <h5 class="text-gray-500 text-sm mt-2">
-              Maio 25, 2022
-            </h5>
-            <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
-              <a href="#"
-              class="hover:text-lightpurple">
-                Use essas dicas nas suas aplicações mobile
-              </a>
-            </h3>
-            <p class="text-justify text-base xl:text-lg hidden md:block">
-              Uma boa regra para o desenvolvimento profissional é que o conteúdo deve caber na tela. Se você está desenvolvendo para iOS ou Android, o conteúdo deve caber na tela. Não force os usuários a rolar para a esquerda ou para a direita.
-            </p>
+          <div
+            class="flex flex-col w-3/4 mb-6 mx-auto lg:mb-0 lg:w-1/3 lg:mx-0" >
+            <img src="./assets/post-4.png" alt="post-4" class="max-w-full" />
+            <div class="sectiontext">
+              <h5 class="text-gray-500 text-sm mt-2">Maio 25, 2022</h5>
+              <h3 class="text-xl md:text-2xl text-purple font-bold my-3">
+                <a href="#" class="hover:text-lightpurple">
+                  Use essas dicas nas suas aplicações mobile
+                </a>
+              </h3>
+              <p class="text-justify text-base xl:text-lg hidden md:block">
+                Uma boa regra para o desenvolvimento profissional é que o
+                conteúdo deve caber na tela. Se você está desenvolvendo para iOS
+                ou Android, o conteúdo deve caber na tela. Não force os usuários
+                a rolar para a esquerda ou para a direita.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
-    </div> 
+    </div>
   </body>
 </html>
